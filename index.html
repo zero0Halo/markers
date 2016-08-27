@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head></head>
+  <body>
+    <h1>Angular Demo</h1>
+
+    <div class="container" ng-app="app">
+      <header ng-include="'scripts/templates/nav.html'"></header>
+      <div ui-view></div>
+      <footer ng-include="'scripts/templates/footer.html'"></footer>
+    </div>
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/homeCtrl.js"></script>
+    <script src="scripts/controllers/aboutCtrl.js"></script>
+    <script src="scripts/services/skills.js"></script>
+  </body>
+</html>
