@@ -6,7 +6,7 @@ angular
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-      .state('home',{
+      .state('list',{
         url: '/',
         templateUrl: 'scripts/templates/home.html',
         controller: 'homeCtrl',
@@ -16,8 +16,8 @@ angular
           }]
         }
       })
-      .state('about',{
-        url: '/about',
+      .state('add',{
+        url: '/add',
         templateUrl: 'scripts/templates/about.html',
         controller: 'aboutCtrl'
       });    

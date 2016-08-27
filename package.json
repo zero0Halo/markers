@@ -1,5 +1,5 @@
 {
-  "name": "sto-skill-planner",
+  "name": "markers",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,6 +19,7 @@
   "devDependencies": {
     "angular": "^1.5.8",
     "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.7",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0"
   }

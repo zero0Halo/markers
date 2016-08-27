@@ -1,1 +1,4 @@
-nav
+<div ng-controller="navCtrl">
+  <a href="#/" ng-class="{ active: isActive('/') }" class="btn btn-default">List</a>
+  <a href="#/add" ng-class="{ active: isActive('/add') }" class="btn btn-default">Add +</a>
+</div>

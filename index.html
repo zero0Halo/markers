@@ -1,8 +1,11 @@
 <!doctype html>
 <html>
-  <head></head>
+  <head>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" type="text/css">
+  </head>
   <body>
-    <h1>Angular Demo</h1>
+    <h1>Markers</h1>
 
     <div class="container" ng-app="app">
       <header ng-include="'scripts/templates/nav.html'"></header>
@@ -13,6 +16,7 @@
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/navCtrl.js"></script>
     <script src="scripts/controllers/homeCtrl.js"></script>
     <script src="scripts/controllers/aboutCtrl.js"></script>
     <script src="scripts/services/skills.js"></script>
