@@ -8,17 +8,22 @@ angular
     $stateProvider
       .state('list',{
         url: '/',
-        templateUrl: 'scripts/templates/home.html',
-        controller: 'homeCtrl',
+        templateUrl: 'scripts/templates/list.html',
+        controller: 'listCtrl',
         resolve: {
-          skills: ['Skills', function(Skills){
-            return Skills.getSkills();
+          marks: ['Marks', function(Marks){
+            return Marks.getMarks();
           }]
         }
       })
       .state('add',{
         url: '/add',
-        templateUrl: 'scripts/templates/about.html',
-        controller: 'aboutCtrl'
+        templateUrl: 'scripts/templates/add.html',
+        controller: 'addCtrl',
+        resolve: {
+          marks: ['Marks', function(Marks){
+            return Marks.getMarks();
+          }]
+        }
       });    
   }]);

@@ -2,14 +2,14 @@
 
   angular
     .module('app')
-    .service('Skills', ['$http', getSkills]);
+    .service('Marks', ['$http', getMarks]);
 
   //////////
 
-  function getSkills($http){
+  function getMarks($http){
     var vm = this;
 
-    vm.getSkills = function(){ 
+    vm.getMarks = function(){ 
       return $http.get('data.json').then(function(response){
         return response.data;
       });

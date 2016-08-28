@@ -4,7 +4,10 @@ var connect = require('gulp-connect');
 gulp.task('connect', function() {
   connect.server({
     root: './',
-    livereload: true
+    livereload: true,
+    headers: {
+        allow: 'GET, HEAD, POST, OPTIONS'
+    }
   });
 });
 

@@ -1,35 +1,19 @@
 [
   {
-    "name": "Boom",
-    "type": "tactical",
-    "tier": 0,
-    "rank": 0,
-    "column": "center",
-    "description": "Generates a large explosion."
+    "label": "YouTube",
+    "category": "media",
+    "url": "http://www.youtube.com"
   },
   {
-    "name": "Fix",
-    "type": "engineering",
-    "tier": 0,
-    "rank": 0,
-    "column": "left",
-    "description": "Repairs the ship."
+    "label": "Seibertron",
+    "category": "transformers",
+    "url": "http://www.seibertron.com"
   },
   {
-    "name": "Calibrate",
-    "type": "engineering",
-    "tier": 0,
-    "rank": 0,
-    "column": "right",
-    "description": "Prepares equipment on the ship."
-  },
-  {
-    "name": "Scan",
-    "type": "science",
-    "tier": 0,
-    "rank": 0,
-    "column": "center",
-    "description": "Scan an enemy for weaknesses."
+    "label": "TFormers",
+    "category": "transformers",
+    "url": "http://www.tformers.com"
   }
+
 ]
 
