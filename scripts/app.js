@@ -16,6 +16,7 @@ angular
           }]
         }
       })
+
       .state('add',{
         url: '/add',
         templateUrl: 'scripts/templates/add.html',
@@ -25,5 +26,11 @@ angular
             return Marks.getMarks();
           }]
         }
-      });    
+      })
+
+      .state('image',{
+        url: '/image',
+        templateUrl: 'scripts/templates/image.html',
+        controller: 'imageCtrl'
+      })
   }]);
