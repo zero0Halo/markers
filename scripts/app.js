@@ -1,6 +1,6 @@
 angular
   .module('app', [
-    'ui.router'
+    'ui.router', 'ang-drag-drop'
   ])
   .config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
     $urlRouterProvider.otherwise('/');
