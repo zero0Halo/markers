@@ -1,0 +1,32 @@
+<div class="toolset" ng-class="collapsed ? 'collapsed' : ''">
+	<div class="expand-collapse" ng-click="expandCollapse()">
+		<i class="fa fa-bars" aria-hidden="true"></i>
+	</div>
+
+	<h2>
+		<span class="text">Tools</span>
+	</h2>
+
+	<div class="tools">
+		<div class="tool" ng-repeat="tool in tools" ng-class="{ active : tool.id === toolId }">
+			<a class="tool-link" ng-click="setActive(tool.id, $event)">
+				<span class="arrow">
+					<i class="fa fa-caret-left" aria-hidden="true"></i>
+				</span>
+				<i class="fa {{tool.iconClass}}" aria-hidden="true"></i>
+				<span class="label">{{tool.name}}</span>
+			</a>
+			<div class="tool-options">	
+				<a ng-repeat="option in tool.options" class="tool-options-link" ng-click="setPanel(option.id)">
+					<span class="label">{{option.name}}</span>
+				</a>
+			</div>
+		</div>
+	</div>	<!-- .tools -->
+
+	<h2>
+		<span class="text">My Widgets</span>
+	</h2>
+
+	<my-tool-panel panel="{{toolId}}" />
+</div>

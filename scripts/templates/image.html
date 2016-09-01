@@ -9,12 +9,15 @@
   </figure>
 </div>
 
+
 <div class="image-box">
   <div class="row is-table-row">
     <div class="col-md-4">
       <h3>A whole bunch of drugs for pharmaceuticals.</h3>
     </div>
-    <div class="col-md-4" ui-on-drop="dropped($event,$data)" drop-channel="dog" ng-controller="create-image-widget">
+    <div class="col-md-4" ui-on-drop="dropped($event,$data)" drop-channel="dog">
+      <ui-view>
+      </ui-view>
 
     </div>
   </div>

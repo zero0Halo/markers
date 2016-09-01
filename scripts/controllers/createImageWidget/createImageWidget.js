@@ -7,7 +7,7 @@
     //////////
 
     function createImageWidget($scope){
-      $scope.template = './template.html'
+      
     };
 
 })();

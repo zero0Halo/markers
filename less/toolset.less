@@ -1,0 +1,126 @@
+@bgColor: #e1e1e1;
+@width: 20em;
+
+.toolset {
+	font-size:10px;
+	width:@width;
+	height:100%;
+	background-color:#e1e1e1;
+	display: block;
+	position: fixed;
+	right:0;
+	top:0;
+	transition: width 500ms;
+
+	.expand-collapse {
+		position: absolute;
+		top:0.5em;
+		left:0.5em;
+		font-size:1.3em;
+		z-index:1000;
+		cursor: pointer;
+	}
+
+	h2 {
+		font-size:1.2em;
+		text-align: center;
+		text-transform: uppercase;
+		padding:0.7em 0;
+		margin:0;
+		white-space: nowrap;
+
+		span {
+			opacity: 1;
+			transition:500ms;
+		}
+	}
+
+
+	div.tools {
+		padding-bottom:2em;
+	}
+
+
+	div.tool {
+		position: relative;
+
+		&.active {
+			a.tool-link {
+				background-color:darken(@bgColor, 20%);
+				span.arrow { opacity: 1; }				
+			}
+
+			div.tool-options {
+				display: block;
+				width: @width;
+				left: unit( -1 * @width, em);
+				background-color:darken(@bgColor, 20%);
+				box-shadow: -0.1em 0.2em 0.1em 0em rgba(0, 0, 0, 0.2);
+			}
+		}
+	}
+
+	a.tool-link {
+		display: block;
+		padding: 0.25em;
+		white-space: nowrap;
+		font-size:1.5em;
+
+		&:hover {
+			background-color:darken(@bgColor, 5%);
+			text-decoration: none;
+			cursor:pointer;
+		}
+	}
+
+	span.arrow {
+		opacity:0;
+		padding: 0 0.7em 0 0.25em;
+	}
+
+	span.label {
+		color:#333;
+		font-weight: bold;
+		opacity: 1;
+		transition: opacity 500ms;		
+	}
+
+	i {
+		color:#333;
+	}
+
+	.tool-options {
+		position: absolute;
+		width:0;
+		left:0;
+		top:0;
+		overflow: hidden;
+		transition: width 250ms, left 250ms;
+
+		a.tool-options-link {
+			display: block;
+			padding: 0.25em;
+			white-space: nowrap;
+			font-size:1.5em;			
+			background-color:@bgColor;
+
+			&:hover {
+				background-color:darken(@bgColor, 20%);
+				text-decoration: none;
+				cursor:pointer;
+			}			
+		}
+	}
+
+	//////////
+
+	&.collapsed {
+		width:5em;
+
+		h2 span,
+		a.tool span.label {
+			opacity: 0;
+		}
+	}
+
+}

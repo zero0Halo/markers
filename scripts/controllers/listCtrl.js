@@ -11,7 +11,7 @@
       $scope.marks = marks;
 
       $scope.update = function(){
-        alert();
+        
       }
     };
 
